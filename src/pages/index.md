@@ -3,9 +3,7 @@ type: language
 language: en
 language_label: "English"
 title: "wedev:// blog"
-description: "A starter blog demonstrating what Gatsby can do."
+description: "GKalmoukis blog"
 ---
 
-Written by **Kyle Mathews** who lives and works in San
-Francisco building useful things.
-[You should follow him on Twitter](https://twitter.com/kylemathews)
+I've created this blog to share some articles for problems I'm having in my work and occasionally some tutorials add it to your android home screen and you will be able to read without internet connection. Follow me at [GitHub](https://github.com/gkalmoukis) and [Twitter](https://twitter.com/giokalm)

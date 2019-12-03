@@ -10,21 +10,46 @@ Components are an essential part of any React application. In this post, we'll b
 
 In order to create a class component, we will have to name it. In the code below, we will name our class component "Example1". All of our code for the component will go where the comment is. 
 
-`{}`
+```javascript
+import React from 'react';
+
+class Example1 extends React.Component {
+    //All of our code goes here
+}
+```
 
 That was easy! Here, it should be noted that if this is a component in a file of it's own, it will have to be exported. There are two ways to do this. We can either include prefix "export default" before our class instantiation
 
-`{}`
+```javascript
+export default class Example2 extends React.Component {
+  ...
+}
+```
 
 or we can simply put a line right at the end of the class that exports it.
 
-`{}`
+```javascript
+class Example3 extends React.Component {
+  ...
+}
+export default Example3;
+```
 
 ## Adding state to a class component
 
 Another benefit to class components is state. State allows us to manage various data within our component. State is one of the big advantages of using React. In order to use state functionality, we need a class component. To get started with state, we need to add a constructor to our class component. You can read more about constructors in JavaScript, but for now it's enough to know that this is required to add state to our components. Very often we see "props" being passed in as an argument for the constructor, so we can use any props being passed into this component. The example code below illustrates this.
 
-`{}`
+```javascript
+class Example4 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      ...
+    }
+  }
+}
+export default Example4;
+```
 
 ## Render our JSX with the render method
 
@@ -32,7 +57,18 @@ After the constructor, we can add a render method which is in charge for returni
 
 It should be noted that in React, the render method can only return one direct element. This means that all of the JSX we are writing to create that component must be wrapped in an outer element such as a <div>. The example below illustrates how this is built.
 
-`{}`
+```javascript
+class Example5 extends React.Component {
+  ...
+  render() {
+    return (
+      <div>
+        <p>Hello World!</p>
+      </div>
+    )
+  }
+}
+```
 
 
 ## Custom Functions in our component 
@@ -41,17 +77,23 @@ Another cool benefit of class components is the ability to write functions for u
 
 To do this, just use the code below:
 
-`{}`
+```javascript
+ this.customFunction = this.customFunction.bind(this);
+```
 
 ## Using a component
 
 First of all, if we have our component in separate file, we will have to import the component into the file where we want to use it. That's pretty simple, do it with this code: 
 
-`{}`
+```javascript
+import Example6 from './path/to/component';
+```
 
 Once the component is imported, we can add it to our JSX using the name we assigned to it in the import, in our case “Example6”. Follow the code pattern bellow to add your component into JSX.
 
-`{}`
+```javascript
+<Example6 />
+```
 
 ## Props
 
@@ -63,13 +105,17 @@ Let's say we want to pass a string into our component. When we assign the prop,
 
 we need to come up with a name for the prop. This should be something enlightening about what it is. Since this is an example, just use “text” but in real world apps it should be more descriptive. We can do it like this:
 
-`{}`
+```javascript
+<Example6 text="Hello World" />
+```
 
 ## Receiving props inside component
 
 So far, we have props being passed into our component, now what? As I said before, when we create our component's constructor, we generally put props into the arguments. That's the way our component receives the props we pass into it. Once there, we can access them in our JSX by using “this.props.NameOfProp” as follows: 
 
-`{}`
+```javascript
+<p>{ this.props.text }</p>
+```
 
 ## Conclusion
 

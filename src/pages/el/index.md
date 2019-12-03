@@ -3,9 +3,7 @@ type: language
 language: el
 language_label: "Ελληνικά"
 title: "wedev:// blog"
-description: "Περιγραφή στα ελληνικά"
+description: "GKalmoukis blog"
 ---
 
-Escrito por **Kyle Mathews**, quien vive y trabaja en San
-Francisco, construyendo cosas útiles.
-[Deberías seguirlo en Twitter](https://twitter.com/kylemathews)
+I've created this blog to share some articles for problems I'm having in my work and occasionally some tutorials add it to your android home screen and you will be able to read without internet connection. Follow me at [GitHub](https://github.com/gkalmoukis) and [Twitter](https://twitter.com/giokalm)

@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://jackbravo.github.io/gatsby-starter-i18n-blog/',
-    author: 'Joaquín Bravo Contreras',
-    title: '',
-    description: 'A starter blog with i18n',
+    siteUrl: 'https://blog.gkalmoukis.com/',
+    author: '@gkalmoukis',
+    title: 'wedev:// Blog',
+    description: 'Blog by Giorgos Kalmoukis',
   },
-  pathPrefix: '/gatsby-starter-i18n-blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -30,7 +30,12 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          'gatsby-remark-prismjs',
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              
+            },
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
@@ -48,8 +53,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `wedev:// blog`,
+        short_name: `We dev blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
